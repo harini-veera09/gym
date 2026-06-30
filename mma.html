@@ -1,0 +1,817 @@
+<html>
+	<head>
+		<title>project </title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>	
+		
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&display=swap" rel="stylesheet">
+			<style>
+			
+				body{
+					background:#0B0C10;
+					color:#1e293b;
+					padding-top:70px;
+					font-family: "Mozilla Text", sans-serif;
+				}				
+				.logo
+				{
+					border:0px none white;
+					border-radius:10px;
+				}
+				
+				.navbar{
+					margin-bottom:10px;
+					background-color:#1F2833;
+				}
+
+				.navbar-brand{
+					display:flex;
+					align-items:center;
+					font-size:24px;
+					font-weight:bold;
+					color:#f4c400 !important;
+					padding-top:8px;
+					padding-bottom:8px;
+				}
+
+				.navbar-brand img{
+					height:35px;
+					width:35px;
+					border-radius:8px;
+					margin-right:10px;
+				}
+
+				.navbar-nav li a{
+					font-size:15px;
+					padding-top:15px;
+					padding-bottom:15px;
+				}
+				
+				.footer{
+					background:#1F2833;
+					color:white;
+					padding:30px 0 20px;
+					margin-top:40px;
+				}
+
+				.f1{
+					text-align:center;
+					font-size:35px;
+					margin-bottom:10px;
+					color:#888;
+				}
+
+				.f2{
+					color:#f4c400;
+					font-weight:bold;
+				}
+
+				.f3{
+					text-align:center;
+					font-size:20px;
+					margin-bottom:50px;
+					color:#999;
+				}
+
+				.f4{
+					color:white;
+					font-size:15px;
+					border-bottom:1px solid #333;
+					padding-bottom:10px;
+					margin-bottom:20px;
+				}
+
+				.f5{
+					font-size:13px;
+					line-height:1.8;
+					color:#ddd;
+				}
+
+				.f6{
+					border-top:1px solid #333;
+					margin-top:40px;
+					padding-top:20px;
+					text-align:center;
+					color:#999;
+					font-size:16px;
+				}
+
+				.a1{
+					background:#000;
+					padding:80px 0;
+				}
+
+				.a2{
+					color:white;
+					font-size:60px;
+					font-weight:bold;
+					line-height:1.1;
+				}
+
+				.a3{
+					color:#f4c400;
+				}
+
+				.a4{
+					color:#d1d5db;
+					font-size:28px;
+					margin-top:20px;
+				}
+
+				.a5{
+					color:white;
+					font-size:18px;
+					line-height:1.9;
+					margin-top:30px;
+				}
+
+				.a6{
+					color:#f4c400;
+					font-weight:bold;
+				}
+
+				.b1{
+					background:#0f172a;
+					padding:70px 40px;
+					border-top:4px solid #f4c400;
+				}
+
+				.b2{
+					width:100%;
+					border-radius:10px;
+				}
+
+				.b3{
+					color:white;
+					font-size:42px;
+					font-weight:bold;
+					margin-bottom:25px;
+				}
+
+				.b4{
+					color:#d1d5db;
+					font-size:19px;
+					line-height:1.9;
+					text-align:justify;
+				}
+
+				.b5{
+					color:#f4c400;
+					font-weight:bold;
+				}
+
+				.b6{
+					background:#1e293b;
+					padding:30px;
+					border-radius:10px;
+				}
+				
+				.c1{
+					background:#000;
+					padding:80px 0;
+				}
+
+				.c2{
+					color:white;
+					font-size:38px;
+					font-weight:bold;
+					margin-bottom:25px;
+				}
+
+				.c3{
+					color:#d1d5db;
+					font-size:18px;
+					line-height:1.8;
+					margin-bottom:25px;
+				}
+
+				.c4{
+					color:#d1d5db;
+					font-size:17px;
+					line-height:1.9;
+					margin-bottom:15px;
+				}
+
+				.c5{
+					color:#f4c400;
+					font-weight:bold;
+				}
+
+				.c6{
+					color:white;
+					font-size:20px;
+					font-style:italic;
+					border-left:4px solid #f4c400;
+					padding-left:15px;
+					margin-top:30px;
+				}
+
+				.c7{
+					width:100%;
+					height:400px;
+					border-radius:10px;
+					border:2px solid #f4c400;
+				}
+
+				.d1{
+					background:#0f172a;
+					padding:70px 40px;
+					border-top:4px solid #f4c400;
+				}
+
+				.d2{
+					background:#1e293b;
+					padding:30px;
+					border-radius:10px;
+				}
+
+				.d3{
+					width:100%;
+					border-radius:10px;
+				}
+
+				.d4{
+					color:white;
+					font-size:42px;
+					font-weight:bold;
+					margin-bottom:25px;
+				}
+
+				.d5{
+					color:#d1d5db;
+					font-size:19px;
+					line-height:1.9;
+					text-align:justify;
+				}
+
+				.d6{
+					color:#f4c400;
+					font-weight:bold;
+				}
+				
+				.e1{
+					background:#000;
+					padding:80px 0;
+				}
+
+				.e2{
+					color:white;
+					font-size:38px;
+					font-weight:bold;
+					margin-bottom:20px;
+				}
+
+				.e3{
+					color:#d1d5db;
+					font-size:18px;
+					margin-bottom:40px;
+				}
+
+				.e4{
+					background:#0f172a;
+					padding:25px;
+					border-radius:10px;
+					border-top:3px solid #f4c400;
+					margin-bottom:20px;
+				}
+
+				.e5{
+					color:#f4c400;
+					font-size:20px;
+					font-weight:bold;
+					margin-bottom:10px;
+				}
+
+				.e6{
+					color:#d1d5db;
+					font-size:15px;
+					line-height:1.7;
+				}
+				
+				.loc1{
+					background:#f3f4f6;
+					padding:80px 0;
+				}
+
+				.loc2{
+					background:#f4c400;
+					padding:40px;
+					border-radius:12px;
+					color:black;
+					min-height:100%;
+				}
+
+				.loc3{
+					font-size:30px;
+					font-weight:bold;
+					margin-bottom:20px;
+				}
+
+				.loc4{
+					font-size:16px;
+					line-height:1.8;
+					margin-bottom:15px;
+				}
+
+				.loc5{
+					margin-top:25px;
+					font-weight:bold;
+					font-size:18px;
+				}
+
+				.loc6{
+					background:white;
+					padding:40px;
+					border-radius:12px;
+					min-height:100%;
+				}
+
+				.loc7{
+					font-size:28px;
+					font-weight:bold;
+					margin-bottom:15px;
+					color:#111;
+				}
+
+				.loc8{
+					font-size:16px;
+					color:#555;
+					margin-bottom:20px;
+				}
+
+				.loc9{
+					font-size:18px;
+					line-height:2;
+					color:#111;
+					padding-left:20px;
+				}
+
+				.loc10{
+					margin-top:20px;
+					font-size:15px;
+					color:#666;
+				}
+				.loc11{
+					font-size:18px;
+					font-weight:bold;
+					margin-top:20px;
+					margin-bottom:10px;
+					color:#111;
+					border-left:4px solid #f4c400;
+					padding-left:10px;
+				}
+
+				.loc12{
+					font-size:16px;
+					color:#444;
+					line-height:2;
+					padding-left:20px;
+				}
+				.n1{
+					color:white;
+					font-size:40px;
+					font-weight:bold;
+					margin-bottom:20px;
+					padding:40px;
+				}
+
+				.n2{
+					color:#f4c400;
+				}
+
+				.n3{
+					color:#f4c400;
+					font-size:24px;
+					font-weight:bold;
+					margin-bottom:15px;
+				}
+
+				.n4{
+					color:#ddd;
+					font-size:18px;
+					margin-bottom:50px;
+				}
+				.n5
+				{
+					font-size:20px;
+					color:white;
+				}
+				.g1{
+					background:#1F2833;
+					border-radius:8px;
+					overflow:hidden;
+					text-align:center;
+					margin-bottom:30px;
+					border:1px solid #333;
+				}
+
+				.g2{
+					background:#222;
+					color:#f4c400;
+					font-size:30px;
+					font-weight:bold;
+					padding:20px;
+				}
+
+				.g3{
+					color:white;
+					font-size:55px;
+					padding:30px 10px 15px;
+				}
+
+				.g3 del{
+					font-size:28px;
+					color:#999;
+				}
+
+				.g4{
+					color:#f4c400;
+					font-size:14px;
+					padding:0 20px;
+					font-weight:bold;
+				}
+
+				.g5{
+					color:#d1d5db;
+					font-size:15px;
+					padding:15px 20px 25px;
+					line-height:1.7;
+					min-height:80px;
+				}
+				.g6{
+					width:100%;
+					background:#f4c400;
+					color:black;
+					font-weight:bold;
+					padding:12px;
+					border:none;
+				}
+				.g8{
+					width:100%;
+					background:#FF3108;
+					color:black;
+					font-weight:bold;
+					padding:12px;
+					border:none;
+				}
+				
+				.g9{
+					width:100%;
+					background:#2508FF;
+					color:black;
+					font-weight:bold;
+					padding:12px;
+					border:none;
+				}
+
+				.section3{
+					padding:20px 0;
+					border:0 hidden white;
+					border-radius:15px;
+				}
+				.sec3{
+				margin-left:20px;
+				margin-right:20px;
+				}
+			</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				  <a class="navbar-brand" href="#"><img src="images/logo.jpg" class="logo" alt="logo"><i>Elite Combat </i></a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="mainNavbar">
+				  <ul class="nav navbar-nav navbar-right">
+					<li ><a href="index.html">Home</a></li>
+					<li ><a href="clubs.html">Clubs</a></li>
+					<li class="active"><a href="class.html">Classes</a></li>
+					<li><a href="membership.html">Membership Fees</a></li>
+					<li><a href="offers.html">Offers</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li>
+					  <button class="btn btn-warning navbar-btn">Join Now</button>
+					</li>
+				  </ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="container-fluid a1">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7 col-md-7 col-xs-12 col-sm-12">
+						<h1 class="a2">CORE COMBAT <span class="a3">MMA CLASSES</span></h1>
+						<p class="a4">Unleash Your Potential Through Professional MMA Training</p>
+					</div>
+
+					<div class="col-lg-5 col-md-5 col-xs-12 col-sm-12">
+						<div class="a5">
+							<p><span class="a6">Focus:</span>Combat Sports (MMA) for aspiring fighters and fitness enthusiasts.</p>
+
+							<p><span class="a6">Components:</span>Striking, Wrestling, Grappling, Conditioning and Self Defence.</p>
+
+							<p><span class="a6">Systems:</span>Boxing, Muay Thai, Judo, Wrestling and Brazilian Jiu-Jitsu.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid b1">
+			<div class="container">
+				<div class="row b6">
+					<div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
+						<img src="images/mma1.jpg" class="img-responsive b2">
+					</div>
+
+					<div class="col-lg-8 col-md-8 col-xs-12 col-sm-12">
+						<h2 class="b3">WHY CHOOSE CORE COMBAT MMA?</h2>
+						
+						<p class="b4">Core Combat MMA is the flagship combat training program of Elite Combat. Designed for beginners, fitness 
+							enthusiasts and competitive athletes, this program combines the best aspects of
+							<span class="b5">Muay Thai , Brazilian Jiu-Jitsu , Boxing , Wrestling </span> and <span class="b5">Judo</span>.<br><br>
+
+							Whether your goal is self-defence, weight loss, confidence building or professional competition, our MMA training
+							develops strength, endurance, discipline and real-world combat skills.<br><br>
+
+							Train with experienced coaches in a structured environment that pushes you beyond your limits while ensuring safety and 
+							steady progression.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid c1">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+
+						<h2 class="c2">
+							WHAT SETS ELITE COMBAT APART?
+						</h2>
+
+						<p class="c3">
+							At Elite Combat, we go beyond traditional MMA trainingto deliver a complete combat sports experience.
+						</p>
+
+						<p class="c4">
+							<span class="c5">1. Expert Coaching Team:</span> Learn from experienced coaches with professionalcombat sports backgrounds.
+						</p>
+
+						<p class="c4">
+							<span class="c5">2. Structured Curriculum:</span> Progressive training plans designed for all skill levels.
+						</p>
+
+						<p class="c4">
+							<span class="c5">3. Practical Self-Defence:</span> Real-world techniques that improve confidence and awareness.
+						</p>
+
+						<p class="c4">
+							<span class="c5">4. Strength & Conditioning:</span> Improve fitness, endurance and athletic performance.
+						</p>
+
+						<p class="c4">
+							<span class="c5">5. Competitive Opportunities:</span> Prepare for local and national combat competitions.
+						</p>
+
+						<p class="c6">
+							Elite Combat isn't just a gym — it's where champions are built.
+						</p>
+
+					</div>
+
+					<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+						<img src="images/mma3.jpg" class="img-responsive c7">
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid d1">
+			<div class="container">
+				<div class="row d2">
+					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						<img src="images/mma2.jpg" class="img-responsive d3">
+					</div>
+
+					<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+						<h2 class="d4">WHAT YOU'LL LEARN</h2>
+						<p class="d5">
+							<span class="d6">Striking Techniques:</span>Master punches, kicks, elbows and knees with proper form and power.<br><br>
+
+							<span class="d6">Grappling & Wrestling:</span>Learn takedowns, clinch work and ground control techniques.<br><br>
+
+							<span class="d6">Self Defence:</span>Build confidence with practical techniques for real-world situations.<br><br>
+
+							<span class="d6">Physical Conditioning:</span>Improve endurance, strength, agility and flexibility through combat-focused training.<br><br>
+
+							<span class="d6">Mental Toughness:</span>Develop discipline, focus and resilience both inside and outside the gym.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid e1">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<h2 class="e2">WHO CAN <span class="a3">JOIN ELITE COMBAT?</span></h2>
+						<p class="e3">Elite Combat MMA is designed for everyone — from beginners to advanced athletes.</p>
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="e4">
+									<h3 class="e5">Beginners</h3>
+									<p class="e6">No experience needed. Start your fitness and MMA journey from scratch.</p>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="e4">
+									<h3 class="e5">Fitness Enthusiasts</h3>
+									<p class="e6">Improve strength, stamina, and burn calories with combat training.</p>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="e4">
+									<h3 class="e5">Aspiring Fighters</h3>
+									<p class="e6">Advanced training for those aiming to compete professionally.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid loc1">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+						<div class="loc2">
+							<h2 class="loc3">CORE COMBAT MMA</h2>
+							<p class="loc4">
+								Core Combat MMA at Elite Combat is a high-intensity training program designed to build real fighting ability,
+								discipline, and peak fitness. It combines striking, grappling, and conditioning into one complete system.
+							</p>
+
+							<p class="loc4">
+								Train under certified coaches, improve endurance, and develop real-world self-defense skills in a safe and 
+								structured environment.
+							</p>
+
+							<h4 class="loc5">“Train Hard. Fight Smart. Stay Disciplined.”</h4>
+						</div>
+					</div>
+
+					<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+						<div class="loc6">
+							<h2 class="loc7">CLASS LOCATIONS & SCHEDULE</h2>
+							<p class="loc8">
+								Core Combat MMA classes are available across multiple locations in Chennai with flexible timings for beginners and advanced fighters.
+							</p>
+
+							<h4 class="loc11">&#128205; LOCATIONS</h4>
+							<ul class="loc9">
+								<li>Mount Road</li>
+								<li>Neelankarai</li>
+								<li>Velachery</li>
+								<li>Teynampet</li>
+							</ul>
+
+							<h4 class="loc11">&#x23f0; TIMINGS</h4>
+							<ul class="loc12">
+								<li><b>Morning Batch:</b> 6:00 AM – 8:00 AM</li>
+								<li><b>Morning Batch 2:</b> 6:40 AM – 8:40 AM</li>
+								<li><b>Evening Batch 1:</b> 6:30 PM – 8:30 PM</li>
+								<li><b>Evening Batch 2:</b> 7:10 PM – 9:10 PM</li>
+								<li><b>Saturday:</b> 9:00 AM – 12:00 PM (Events)</li>
+							</ul>
+							<p class="loc10">
+								All sessions are structured with professional coaching, warm-ups, sparring drills, and conditioning work.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container section2">
+			<div class="row">
+				<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+					<h1 class="n1">CORE COMBAT <span class="n2">MMA CLASS FEES</span></h1>
+					<div class="row">
+						<div class="col-md-4 col-lg-4 col-sm-8 col-xs-12">
+							<div class="g1">
+								<div class="g2">3 Months</div>
+								<div class="g3">
+									₹20,500
+								</div>
+								<p class="g4">60 to 120 minute sessions x 4-6 days a week</p>
+								<p class="g5">Build a strong base in striking, grappling and endurance.</p>
+								<button class="btn g6">Purchase</button>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-lg-4 col-sm-8 col-xs-12">
+							<div class="g1">
+								<div class="g2">6 Months</div>
+								<div class="g3">
+								₹29,000
+								</div>
+								<p class="g4">60 to 120 minute sessions x 4-6 days a week</p>
+								<p class="g5">Progress to advanced MMA techniques and conditioning.</p>
+								<button class="btn g6">Purchase</button>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-4 col-sm-8 col-xs-12">
+							<div class="g1">
+								<div class="g2">12 Months</div>
+								<div class="g3"><del>₹43,000</del><br>₹36,800</div>
+								<p class="g4">60 to 120 minute sessions x 4-6 days a week</p>
+								<p class="g5">Elite training for mastering MMA skills and peak fitness.</p>
+								<button class="btn g6">Purchase</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="container-fluid footer">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+						<h1 class="f1">
+							CONTACT US:<span class="f2"><br>+91 90000 00000</span>
+						</h1>
+
+						<p class="f3">
+							9 AM TO 9 PM FOR CUSTOMER SERVICE
+						</p>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<h4 class="f4">Elite Combat Mount Road</h4>
+							<p class="f5">
+								No. 770-A, 2nd Floor,<br>
+								Anna Salai,<br>
+								Chennai - 600002
+							</p>
+						</div>
+							<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<h4 class="f4">Elite Combat Velachery</h4>
+							<p class="f5">
+								Velachery Main Road,<br>
+								Near Phoenix Mall,<br>
+								Chennai - 600042
+							</p>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<h4 class="f4">Elite Combat Anna Nagar</h4>
+							<p class="f5">
+								2nd Avenue,<br>
+								Anna Nagar East,<br>
+								Chennai - 600102
+							</p>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<h4 class="f4">Elite Combat Tambaram</h4>
+							<p class="f5">
+								GST Road,<br>
+								Tambaram West,<br>
+								Chennai - 600045
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+						<div class="f6">
+							© 2026 Elite Combat | All Rights Reserved
+						</div>
+					</div>
+				</div>
+			</div>
+	</body>
+</html>
+	
+		

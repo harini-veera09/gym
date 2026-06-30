@@ -1,0 +1,597 @@
+<html>
+	<head>
+		<title>project </title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>	
+		
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&display=swap" rel="stylesheet">
+			<style>
+			
+				body{
+					background:#0B0C10;
+					color:#1e293b;
+					padding-top:70px;
+					font-family: "Mozilla Text", sans-serif;
+				}				
+				.logo
+				{
+					border:0px none white;
+					border-radius:10px;
+				}
+				
+				.navbar{
+					margin-bottom:10px;
+					background-color:#1F2833;
+				}
+
+				.navbar-brand{
+					display:flex;
+					align-items:center;
+					font-size:24px;
+					font-weight:bold;
+					color:#f4c400 !important;
+					padding-top:8px;
+					padding-bottom:8px;
+				}
+
+				.navbar-brand img{
+					height:35px;
+					width:35px;
+					border-radius:8px;
+					margin-right:10px;
+				}
+
+				.navbar-nav li a{
+					font-size:15px;
+					padding-top:15px;
+					padding-bottom:15px;
+				}
+				
+				.footer{
+					background:#1F2833;
+					color:white;
+					padding:30px 0 20px;
+					margin-top:40px;
+				}
+
+				.f1{
+					text-align:center;
+					font-size:35px;
+					margin-bottom:10px;
+					color:#888;
+				}
+
+				.f2{
+					color:#f4c400;
+					font-weight:bold;
+				}
+
+				.f3{
+					text-align:center;
+					font-size:20px;
+					margin-bottom:50px;
+					color:#999;
+				}
+
+				.f4{
+					color:white;
+					font-size:15px;
+					border-bottom:1px solid #333;
+					padding-bottom:10px;
+					margin-bottom:20px;
+				}
+
+				.f5{
+					font-size:13px;
+					line-height:1.8;
+					color:#ddd;
+				}
+
+				.f6{
+					border-top:1px solid #333;
+					margin-top:40px;
+					padding-top:20px;
+					text-align:center;
+					color:#999;
+					font-size:16px;
+				}
+				
+				.a1{
+					padding:70px 0;
+					position:relative;
+				}
+
+				.a2{
+					color:white;
+					font-size:50px;
+					font-weight:300;
+					line-height:1.1;
+				}
+
+				.a3{
+					color:#f4c400;
+					font-weight:bold;
+				}
+				
+				.a8{
+					color:#f4c400
+				}
+				.a4{
+					color:white;
+					font-size:20px;
+					margin-top:15px;
+				}
+
+				.a5{
+					width:220px;
+					height:220px;
+					border:3px solid white;
+					display:flex;
+					flex-direction:column;
+					justify-content:center;
+					align-items:center;
+					margin:auto;
+					color:white;
+				}
+
+				.a6{
+					font-size:70px;
+					font-weight:bold;
+				}
+
+				.a7{
+					font-size:30px;
+				}
+
+				.b1{
+					background:#000;
+					padding:50px 0;
+				}
+
+				.b2{
+					color:#cfcfcf;
+					font-size:20px;
+					line-height:1.8;
+					border-left:5px solid #f4c400;
+					padding-left:25px;
+				}
+
+				.b3{
+					background:#f4c400;
+					color:black;
+					font-size:22px;
+					font-weight:bold;
+					padding:18px 45px;
+					border:none;
+					margin-top:20px;
+					border-radius:0;
+				}
+
+				.b3:hover{
+					background:#ffd633;
+				}
+				.n1{
+					color:white;
+					font-size:40px;
+					font-weight:bold;
+					margin-bottom:20px;
+					padding:40px;
+				}
+
+				.n2{
+					color:#f4c400;
+				}
+
+				.n3{
+					color:#f4c400;
+					font-size:18px;
+					font-weight:bold;
+					margin-bottom:15px;
+				}
+
+				.n4{
+					color:#ddd;
+					font-size:18px;
+					margin-bottom:50px;
+				}
+				.n5
+				{
+					font-size:20px;
+					color:white;
+				}
+				.g1{
+					background:#1F2833;
+					border-radius:8px;
+					overflow:hidden;
+					text-align:center;
+					margin-bottom:30px;
+					border:1px solid #333;
+				}
+
+				.g2{
+					background:#222;
+					color:#f4c400;
+					font-size:20px;
+					font-weight:bold;
+					padding:20px;
+				}
+
+				.g3{
+					color:white;
+					font-size:55px;
+					padding:30px 10px 15px;
+				}
+
+				.g3 del{
+					font-size:28px;
+					color:#999;
+				}
+
+				.g4{
+					color:#f4c400;
+					font-size:14px;
+					padding:0 20px;
+					font-weight:bold;
+				}
+
+				.g5{
+					color:#d1d5db;
+					font-size:15px;
+					padding:15px 20px 25px;
+					line-height:1.7;
+					min-height:80px;
+				}
+				.g6{
+					width:100%;
+					background:#f4c400;
+					color:black;
+					font-weight:bold;
+					padding:12px;
+					border:none;
+				}
+				.g8{
+					width:100%;
+					background:#FF3108;
+					color:black;
+					font-weight:bold;
+					padding:12px;
+					border:none;
+				}
+				
+				.g9{
+					width:100%;
+					background:#2508FF;
+					color:black;
+					font-weight:bold;
+					padding:12px;
+					border:none;
+				}
+
+				.section3{
+					padding:20px 0;
+					border:0 hidden white;
+					border-radius:15px;
+				}
+				.sec3{
+				margin-left:20px;
+				margin-right:20px;
+				}
+				.e1{
+					background:#000;
+					padding:70px 0;
+				}
+
+				.e2{
+					background:#1a1a1a;
+					padding:30px;
+					border-radius:5px;
+				}
+
+				.e3{
+					width:180px;
+					margin:0 auto 20px;
+					display:block;
+				}
+
+				.e4{
+					color:#f4c400;
+					text-align:center;
+					font-size:32px;
+					margin-bottom:25px;
+				}
+
+				.e5{
+					margin-bottom:15px;
+					background:#111;
+					border:1px solid #333;
+					color:white;
+					height:45px;
+				}
+
+				.e6{
+					background:#f4c400;
+					color:black;
+					font-weight:bold;
+					border:none;
+					padding:12px 35px;
+					margin-top:10px;
+				}
+				.s1{
+					color:#f4c400;
+					font-size:22px;
+					font-weight:bold;
+					margin-bottom:15px;
+					margin-top:40px;
+				}
+
+				.s2{
+					color:#ddd;
+					font-size:15px;
+					line-height:1.9;
+					margin-bottom:35px;
+					text-align:justify;
+				}
+
+				.s3{
+					color:white;
+					font-size:24px;
+					line-height:1.8;
+					border-left:4px solid #f4c400;
+					padding-left:20px;
+					margin-top:20px;
+					font-style:italic;
+				}
+			</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				  <a class="navbar-brand" href="#"><img src="images/logo.jpg" class="logo" alt="logo"><i>Elite Combat </i></a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="mainNavbar">
+				  <ul class="nav navbar-nav navbar-right">
+					<li ><a href="index.html">Home</a></li>
+					<li><a href="clubs.html">Clubs</a></li>
+					<li class="active"><a href="class.html">Classes</a></li>
+					<li><a href="membership.html">Membership Fees</a></li>
+					<li><a href="offers.html">Offers</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li>
+					  <button class="btn btn-warning navbar-btn">Join Now</button>
+					</li>
+				  </ul>
+				</div>
+			</div>
+		</nav>
+		 
+		<div class="container-fluid a1">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+						<div class="a2">
+							TARGETED PERSONAL<br>TRAINING <span class="a3">(TPT)</span>
+						</div>
+
+						<div class="a4">
+							<span class="a8">Location:</span> Anna Nagar, Mount Road, Teynampet, Velachery
+						</div>
+
+						<div class="a4">
+							<span class="a8">Timing:</span> 4 to 7 days a week
+						</div>
+
+						<div class="a4">
+							<span class="a8">Systems:</span> MMA, Yoga, Conditioning & Strength Training
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						<div class="a5">
+							<div class="a6">60</div>
+							<div class="a7">Minutes</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container-fluid b1">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+						<div class="b2">
+							Our premium targeted personal training module is reserved for clients who are serious about becoming the best version
+							of themselves. This one-on-one program includes lifestyle programming, exercise planning, nutrition guidance and
+							personal coaching support.
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+						<button class="btn b3">BUY NOW</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+		<div class="container section2">
+			<div class="row">
+				<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+					<h1 class="n1">TARGETED PERSONAL TRAINING <span class="n2">(TPT)</span> FEES</h1>
+					
+					<div class="row">
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="g1">
+								<div class="g2">Single Session<br><span class="n5" >(Online/In-Club)</span></div>
+								<div class="g3">₹2,000</div>
+								<p class="g4">One 60-minute personal training session.</p>
+								<p class="g5">Perfect for technique correction and fitness assessment.</p>
+								<button class="btn g9">Purchase</button>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="g1">
+								<div class="g2">Single Session<br><span class="n5">(At Home)</span></div>
+								<div class="g3">₹2,600</div>
+								<p class="g4">One 60-minute home training session.</p>
+								<p class="g5">Sessions can be Martial Arts or Fitness based.<br>Conducted at your home/location of your choice.</p>
+								<button class="btn g9">Purchase</button>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="g1">
+								<div class="g2">1 Month<br><span class="n5">(Online/In-Club)</span></div>
+								<div class="g3">₹26,300</div>
+								<p class="g4">16 personalized, 60-minute sessions x 4 days a week, in person at clubs or online.</p>
+								<p class="g5">Includes strength, conditioning and skill development.<br>Additionally, gain access to up to 3 Group Sessions per week</p>
+								<button class="btn g9">Purchase</button>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="g1">
+								<div class="g2">1 Month<br><span class="n5">(At Home)</span></div>
+								<div class="g3">₹34,190</div>
+								<p class="g4">16 personalized, 60 minute sessions x 4 days a week delivered at your home.</p>
+								<p class="g5">Complete one-on-one coaching with customized plans.<br>Additionally, gain access to up to 3 
+								Group Sessions per week:1 Sparring Session,1 Sprinting,1 Swimming </p>
+								<button class="btn g9">Purchase</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid e1">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+						<h2 class="s1">INTRODUCTION:</h2>
+
+						<p class="s2">Our Targeted Personal Training (TPT) program is a premium one-on-one coaching experience designed for
+						individuals who want personalized guidance and faster results. We take the time to understand your current fitness level,
+						lifestyle, challenges, and long-term goals before creating a customized training plan.</p>
+
+						<h2 class="s1">ASSESSMENT:</h2>
+
+						<p class="s2">Every client begins with a comprehensive assessment process. Our coaches evaluate mobility, posture, strength,
+						endurance, body composition, and movement patterns to identify strengths and areas for improvement. This allows us to 
+						establish a clear baseline and create a program that delivers measurable progress.</p>
+
+						<h2 class="s1">PERSONAL TRAINING CUSTOMIZATION:</h2>
+
+						<p class="s2">No two individuals are the same. Your training plan is tailored specifically to your goals, whether that
+						involves weight loss, muscle gain, athletic performance, self-defence preparedness, rehabilitation, or overall fitness
+						improvement. Nutrition guidance and lifestyle recommendations are also integrated into the program for maximum effectiveness.</p>
+
+						<h2 class="s1">TRAINING AND MOTIVATION:</h2>
+
+						<p class="s2">Consistency is the key to transformation. Our coaches provide continuous support, accountability, and 
+						motivation throughout your journey. Every session is designed to challenge you safely while building confidence, discipline,
+						and sustainable healthy habits that extend beyond the gym.</p>
+
+						<p class="s3">At Elite Combat, personal training is more than exercise — it's a structured path towards becoming the 
+						strongest, healthiest, and most confident version of yourself.</p>
+					</div>
+
+					
+					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						<div class="e2">
+
+							<img src="images/logo.jpg" class="img-responsive e3">
+
+							<h2 class="e4">REQUEST A CONSULTATION</h2>
+
+							<input type="text" class="form-control e5" placeholder="Name">
+
+							<input type="text" class="form-control e5" placeholder="Mobile Number">
+
+							<input type="email" class="form-control e5" placeholder="Email">
+
+							<select class="form-control e5">
+								<option>Mount Road</option>
+								<option>Teynampet</option>
+								<option>Velachery</option>
+								<option>Neelankarai</option>
+							</select>
+							<button class="btn e6">SEND</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid footer">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+						<h1 class="f1">
+							CONTACT US:<span class="f2"><br>+91 90000 00000 </span>
+						</h1>
+
+						<p class="f3">
+							9 AM TO 9 PM FOR CUSTOMER SERVICE
+						</p>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<h4 class="f4">Elite Combat Mount Road</h4>
+							<p class="f5">
+								No. 770-A, 2nd Floor,<br>
+								Anna Salai,<br>
+								Chennai - 600002
+							</p>
+						</div>
+							<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<h4 class="f4">Elite Combat Velachery</h4>
+							<p class="f5">
+								Velachery Main Road,<br>
+								Near Phoenix Mall,<br>
+								Chennai - 600042
+							</p>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<h4 class="f4">Elite Combat Anna Nagar</h4>
+							<p class="f5">
+								2nd Avenue,<br>
+								Anna Nagar East,<br>
+								Chennai - 600102
+							</p>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<h4 class="f4">Elite Combat Tambaram</h4>
+							<p class="f5">
+								GST Road,<br>
+								Tambaram West,<br>
+								Chennai - 600045
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+						<div class="f6">
+							© 2026 Elite Combat | All Rights Reserved
+						</div>
+					</div>
+				</div>
+			</div>
+	</body>
+</html>
+	
+		

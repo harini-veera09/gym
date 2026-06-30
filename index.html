@@ -1,0 +1,676 @@
+	<html>
+		<head>
+			<title>project </title>
+				<meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>	
+			
+				<link rel="preconnect" href="https://fonts.googleapis.com">
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+				<link href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&display=swap" rel="stylesheet">
+				<style>
+				
+					body{
+						background:#0B0C10;
+						color:#1e293b;
+						padding-top:70px;
+						font-family: "Mozilla Text", sans-serif;
+					}				
+					.logo
+					{
+						border:0px none white;
+						border-radius:10px;
+					}
+					
+					.navbar{
+						margin-bottom:10px;
+						background-color:#1F2833;
+					}
+
+					.navbar-brand{
+						display:flex;
+						align-items:center;
+						font-size:24px;
+						font-weight:bold;
+						color:#f4c400 !important;
+						padding-top:8px;
+						padding-bottom:8px;
+					}
+
+					.navbar-brand img{
+						height:35px;
+						width:35px;
+						border-radius:8px;
+						margin-right:10px;
+					}
+
+					.navbar-nav li a{
+						font-size:15px;
+						padding-top:15px;
+						padding-bottom:15px;
+					}
+								
+					.section1{
+						background:#1F2833;
+						color:white;
+						text-align:center;
+						padding:10px 0;
+						margin-top:50px;
+					}
+					.a1{
+						font-size:30px;
+						font-weight:bold;			
+					}
+
+					.a2{
+						color:white;
+					}
+
+					.a3{
+						font-size:25px;
+						font-style:italic;
+						margin-bottom:30px;
+					}
+
+					.section1 .btn{
+						margin:10px;
+						border-radius:5px;
+						font-weight:bold;
+					}
+					.section2{
+						background:1F2833;
+						color:white;
+						padding:60px  ;
+					}
+
+					.a4{
+						font-size:35px;
+						margin-bottom:15px;
+					}
+
+					.a5{
+						font-size:22px;
+						line-height:1.8;
+					}
+					.a6{
+						background:linear-gradient(135deg,#1F2833,#222);
+						color:white;
+						padding:35px;
+						border:2px solid #f4c400;
+						border-radius:15px;
+						text-align:center;
+						transition:0.5s;
+						height:320px;
+						margin-bottom:30px;
+					}
+
+					.a6:hover{
+						transform:translateY(-10px) scale(1.03);
+						box-shadow:0px 0px 25px #f4c400;
+						background:linear-gradient(135deg,#222,#333);
+					}
+					.a7{
+						color:#f4c400;
+						font-size:28px;
+						font-weight:bold;
+						font-style:italic;
+						margin-bottom:20px;
+					}
+
+					.a8{
+						color:white;
+						font-size:24px;
+						font-weight:bold;
+						margin-bottom:20px;
+					}
+
+					.a9{
+						color:#dcdcdc;
+						font-size:17px;
+						line-height:1.8;
+					}
+					
+					.glyphicon-fire{
+						font-size:40px;
+						color:#f4c400;
+						margin-bottom:15px;
+					}
+					
+					.section3{
+						background:#1F2833;
+						padding:20px 30px;
+						color:white;
+					}
+
+					.b1{
+						color:#f4c400;
+						font-size:30px;
+						font-weight:bold;
+						margin-bottom:20px;
+					}
+
+					.b2{
+						font-size:23px;
+						line-height:1.8;
+						margin-bottom:30px;
+					}
+
+					.b3{
+						font-size:20px;
+						line-height:2;
+					}
+
+					.b4{
+						color:#f4c400;
+						font-weight:bold;
+					}
+
+					.b5{
+						border-left:8px solid #f4c400;
+						padding-left:30px;
+						font-size:40px;
+						color:#999;
+						font-style:italic;
+						margin-top:20px;
+					}	
+					.b6{
+						background:#f4c400;
+						color:black;
+						text-align:center;
+						font-size:28px;
+						padding:10px;
+						font-weight:500;
+						display:block;
+						margin-top:20px;
+						margin-bottom:20px;
+					}
+					.b6:hover{
+						background:#ffd633;
+					}
+					.section4{
+						background:#1F2833;
+						color:white;
+						padding:40px 50px;
+						margin-top:30px;
+					}
+
+					.c1{
+						color:#f4c400;
+						margin-bottom:30px;
+						font-size:28px;
+						font-weight:bold;
+					}
+
+					.c2{
+						font-size:20px;
+						line-height:1.8;
+						padding-left:25px;
+					}
+
+					.c2 li{
+						margin-bottom:5px;
+					}
+
+					.c3{
+						color:#f4c400;
+						font-weight:bold;
+					}
+
+					.c4{
+						border-left:8px solid #f4c400;
+						padding-left:30px;
+						font-size:45px;
+						color:#888;
+						font-style:italic;
+						line-height:1.8;
+						margin-top:20px;
+					}
+					.section5{
+						background:#1F2833;
+						color:white;
+						padding:70px 40px;
+						margin-top:30px;
+					}
+
+					.d1{
+						color:#f4c400;
+						font-size:40px;
+						font-weight:bold;
+						margin-top:20px;
+					}
+
+					.d2{
+						font-size:20px;
+						margin:20px;
+						color:#ddd;
+					}
+
+					.d3{
+						border-left:6px solid #f4c400;
+						padding-left:25px;
+						font-size:25px;
+						font-style:italic;
+						color:#999;
+						line-height:1.8;
+						margin-top:30px;
+						text-align:left;
+					}
+
+					.form-horizontal{
+						background:#1a1a1a;
+						padding:30px;
+						border:2px solid #f4c400;
+						border-radius:10px;
+					}
+
+					.d4{
+						font-size:35px;
+						font-weight:bold;
+						margin-bottom:30px;
+						color:white;
+					}
+
+					.d5{
+						color:#f4c400;
+					}
+					
+					.d6{
+						background:#f4c400;
+						color:black;
+						font-weight:bold;
+						margin-top:24px;
+					}
+
+					.d6:hover{
+						background:#ffd633;
+					}
+
+					.footer{
+						background:#1F2833;
+						color:white;
+						padding:30px 0 20px;
+						margin-top:40px;
+					}
+
+					.f1{
+						text-align:center;
+						font-size:35px;
+						margin-bottom:10px;
+						color:#888;
+					}
+
+					.f2{
+						color:#f4c400;
+						font-weight:bold;
+					}
+
+					.f3{
+						text-align:center;
+						font-size:20px;
+						margin-bottom:50px;
+						color:#999;
+					}
+
+					.f4{
+						color:white;
+						font-size:15px;
+						border-bottom:1px solid #333;
+						padding-bottom:10px;
+						margin-bottom:20px;
+					}
+
+					.f5{
+						font-size:13px;
+						line-height:1.8;
+						color:#ddd;
+					}
+
+					.f6{
+						border-top:1px solid #333;
+						margin-top:40px;
+						padding-top:20px;
+						text-align:center;
+						color:#999;
+						font-size:16px;
+					}
+					.e1{
+						width:100%;
+						height:500px;
+						object-fit:cover;
+					}
+				</style>
+		</head>
+		<body>
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					  <a class="navbar-brand" href="#"><img src="images/logo.jpg" class="logo" alt="logo"><i>Elite Combat </i></a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="mainNavbar">
+					  <ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="clubs.html">Clubs</a></li>
+						<li><a href="class.html">Classes</a></li>
+						<li><a href="membership.html">Membership Fees</a></li>
+						<li><a href="offers.html">Offers</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li>
+							<button class="btn btn-warning navbar-btn">Join Now</button>
+						</li>
+					  </ul>
+					</div>
+				</div>
+			</nav>
+				<div class="container-fluid" >
+					<div class="row">
+						<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+							<div id="mycarousel" class="carousel slide" data-ride="carousel">
+								<ol class="carousel-indicators">
+									<li data-targets="#mycarousel" data-slide-to="0" class="active"></li>
+									<li data-targets="#mycarousel" data-slide-to="1" ></li>
+									<li data-targets="#mycarousel" data-slide-to="2" ></li>
+								</ol>
+								<div class="carousel-inner e1">
+									<div class="item active">
+										<img src="images/image1.jpg" class="img-responsive" width=100% >
+									</div>
+									<div class="item">
+										<img src="images/image2.jpg" class="img-responsive" width=100%>
+									</div>
+									<div class="item">
+										<img src="images/image3.jpg" class="img-responsive" width=100%>
+									</div>
+								</div>
+								<a class="left carousel-control" href="#mycarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+								<a class="right carousel-control" href="#mycarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid text-center" >
+					<div class="row">
+						<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+							<div class="section1">
+						
+								<h1 class="a1">
+									TRAIN WITH INDIA'S LEADING MMA ACADEMY:
+									<span class="a2">ELITE COMBAT</span>
+								</h1>
+								<p class="a3">
+									Build Strength, Fitness and Skills with MMA,
+									Fitness Training, Boxing and More.
+								</p>
+
+								<button class="btn btn-warning btn-lg">
+									BOOK A TRIAL CLASS
+								</button>
+							
+								<button class="btn btn-warning btn-lg">
+									FIND YOUR NEAREST CLUB
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+					
+				<div class="container-fluid text-center" >
+					<div class="row">
+						<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+							<div class="section2">
+
+								<h1 class="a4">EXPLORE OUR CLASSES</h1>
+
+								<p class="a5">
+									Whether you're seeking elite fitness, self-defense skills,
+									or professional MMA training, we have a class designed for every level.
+								</p>
+							</div>	
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-4 col-xs-12 col-sm-12 col-lg-4">
+							<div class="a6">
+								<span class="glyphicon glyphicon-fire"></span>
+									<h2 class="a7">MMA TRAINING</h2>
+									<h3 class="a8">₹15,000 / 3 Months</h3>
+									<p class="a9">
+										Learn striking, grappling, takedowns and self-defense
+										techniques under professional trainers.
+									</p>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-xs-12 col-sm-12 col-lg-4">
+							<div class="a6">
+								<span class="glyphicon glyphicon-fire"></span>
+									<h2 class="a7">BOXING</h2>
+									<h3 class="a8">₹12,000 / 3 Months</h3>
+									<p class="a9">
+										Master punching techniques, footwork, speed,
+										endurance and ring strategy.
+									</p>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-xs-12 col-sm-12 col-lg-4">
+							<div class="a6">
+								<span class="glyphicon glyphicon-fire"></span>
+									<h2 class="a7">FITNESS TRAINING</h2>
+									<h3 class="a8">₹10,000 / 3 Months</h3>
+									<p class="a9">
+										Build strength, stamina and flexibility with
+										structured workout programs.
+									</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container section3">
+					<div class="row">
+						<div class="col-md-8 col-xs-12 col-sm-12 col-lg-8">
+						
+							<h1 class="b1">
+								MORE THAN A GYM: A TRANSFORMATIVE TRAINING EXPERIENCE
+							</h1>
+							
+							<p class="b2">
+								Elite Combat is Chennai's destination for martial arts and fitness.
+								Our programs combine proven training methods with modern fitness
+								science to help you achieve lasting results.
+							</p>
+							
+							<ul class="b3">
+								<li>
+									<span class="b4">Expert Training:</span>
+									Learn from experienced coaches and athletes.
+								</li>
+
+								<li>
+									<span class="b4">Professional Programs:</span>
+									Structured classes for beginners and advanced students.
+								</li>
+
+								<li>
+									<span class="b4">Results That Last:</span>
+									Improve strength, endurance, confidence and discipline.
+								</li>
+
+							</ul>
+						</div>
+						<div class="col-md-4 col-xs-12 col-sm-12 col-lg-4">
+							<div class="b5">
+								"Excellence isn't about being better than others — it's about being better than you were yesterday."
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
+					<div class="row">
+						<a href="#" class="b6">
+							<span class="glyphicon glyphicon-envelope"></span>
+							REQUEST A TRIAL CLASS TODAY
+						</a>
+					</div>
+				</div>
+				<div class="container section4">
+					<div class="row">
+						<div class="col-md-8 col-xs-12 col-sm-12 col-lg-8 ">
+							<h1 class="c1">
+								RECOGNIZED EXCELLENCE IN MMA & FITNESS
+							</h1>
+
+							<ul class="c2">
+								<li>
+									Elite Combat is one of Chennai's leading MMA and fitness academies.
+								</li>
+								<li>
+									Train with experienced coaches and professional athletes in
+									<span class="c3">national-level training programs.</span>
+								</li>
+								<li>
+									Develop strength, discipline and confidence through
+									<span class="c3">structured combat training.</span>
+								</li>
+								<li>
+									Our academy focuses on
+									<span class="c3">fitness, self-defense and competition preparation.</span>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-4 col-xs-12 col-sm-12 col-lg-4">
+							<div class="c4">
+								"We don't just build muscles; we build champions."
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container section5">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 col-sm-12 col-lg-6 text-center">
+							<img src="images/logo.jpg" class="img-responsive center-block logo" style="height:180px;">
+
+							<h1 class="d1">ELITE COMBAT</h1>
+
+							<p class="d2">
+								Train Hard. Fight Smart. Become Stronger Every Day.
+							</p>
+
+							<div class="d3">
+								"Champions are not made in comfort zones.
+								They are built through discipline,
+								hard work and determination."
+							</div>
+						</div>
+						<div class="col-md-6 col-xs-12 col-sm-12 col-lg-6">
+								<h2 class="d4">
+									REQUEST A <span class="d5">TRIAL CLASS</span>
+								</h2>
+								<form class="form-horizontal">
+									<div class="form-group">
+										<label>Name</label>
+										<input type="text" class="form-control" placeholder="Enter Name">
+									</div>
+
+									<div class="form-group">
+										<label>Mobile</label>
+										<input type="number" class="form-control" placeholder="Mobile Number">
+									</div>
+
+									<div class="form-group">
+										<label>Email</label>
+										<input type="email" class="form-control" placeholder="Email">
+									</div>
+
+									<div class="form-group">
+										<label>Program</label>
+										<select class="form-control">
+											<option>MMA Training</option>
+											<option>Boxing</option>
+											<option>Fitness Training</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label>Location</label>
+										<select class="form-control">
+											<option>Mount Road</option>
+											<option>Teynampet</option>
+											<option>Velachery</option>
+											<option>Neelankarai</option>
+										</select>
+									</div>
+									<center><button class="btn d6">SEND REQUEST</button></center>
+								</form>
+						</div>
+						
+					</div>
+				</div>
+				<div class="container-fluid footer">
+					<div class="row">
+						<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+							<h1 class="f1">
+								CONTACT US:<span class="f2"><br>+91 90000 00000</span>
+							</h1>
+
+							<p class="f3">
+								9 AM TO 9 PM FOR CUSTOMER SERVICE
+							</p>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+								<h4 class="f4">Elite Combat Mount Road</h4>
+								<p class="f5">
+									No. 770-A, 2nd Floor,<br>
+									Anna Salai,<br>
+									Chennai - 600002
+								</p>
+							</div>
+								<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+								<h4 class="f4">Elite Combat Velachery</h4>
+								<p class="f5">
+									Velachery Main Road,<br>
+									Near Phoenix Mall,<br>
+									Chennai - 600042
+								</p>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+								<h4 class="f4">Elite Combat Anna Nagar</h4>
+								<p class="f5">
+									2nd Avenue,<br>
+									Anna Nagar East,<br>
+									Chennai - 600102
+								</p>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+								<h4 class="f4">Elite Combat Tambaram</h4>
+								<p class="f5">
+									GST Road,<br>
+									Tambaram West,<br>
+									Chennai - 600045
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+							<div class="f6">
+								© 2026 Elite Combat | All Rights Reserved
+							</div>
+						</div>
+					</div>
+				</div>
+		</body>
+	</html>
+		

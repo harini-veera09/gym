@@ -1,0 +1,393 @@
+<html>
+	<head>
+		<title>project </title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>	
+			
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&display=swap" rel="stylesheet">
+			<style>
+			
+				body{
+					background:#0B0C10;
+					color:#1e293b;
+					padding-top:70px;
+					font-family: "Mozilla Text", sans-serif;
+					
+				}
+				.logo
+				{
+					border:0px none white;
+					border-radius:10px;
+				}
+				
+				.navbar{
+					margin-bottom:10px;
+					background-color:#1F2833;
+				}
+
+				.navbar-brand{
+					display:flex;
+					align-items:center;
+					font-size:24px;
+					font-weight:bold;
+					color:#f4c400 !important;
+					padding-top:8px;
+					padding-bottom:8px;
+				}
+
+				.navbar-brand img{
+					height:35px;
+					width:35px;
+					border-radius:8px;
+					margin-right:10px;
+				}
+
+				.navbar-nav li a{
+					font-size:15px;
+					padding-top:15px;
+					padding-bottom:15px;
+				}
+
+				.a1{
+					background:#1F2833;
+					padding:40px;
+				}
+
+				.a2{
+					text-align:center;
+					font-size:35px;
+					font-weight:bold;
+					color:white;
+				}
+
+				.a3{
+					color:#f4c400;
+				}
+
+				.a4{
+					text-align:center;
+					font-size:20px;
+					margin-top:15px;
+					color:#ddd;
+				}
+
+				.a5{
+					padding:40px;
+				}
+
+				.a6{
+					font-size:40px;
+					margin-bottom:20px;
+					color:white;
+				}
+
+				.a7{
+					font-size:20px;
+					line-height:1.8;
+					color:#ddd;
+				}
+
+				.a8{
+					background:#1F2833;
+					border-radius:10px;
+					overflow:hidden;
+					margin-top:30px;
+					transition:0.4s;
+				}
+
+				.a9{
+					width:100%;
+					height:220px;
+				}
+
+				.a10{
+					text-align:center;
+					padding:20px;
+					color:white;
+				}
+
+				.a8:hover{
+					transform:translateY(-8px);
+					box-shadow:0 0 20px #f4c400;
+				}
+				
+				.form-horizontal{
+					background:black;
+					padding:30px;
+					border:2px solid #f4c400;
+					border-radius:10px;
+				}
+				.form-horizontal label{
+					color:white;
+					font-size:16px;
+				}
+				.b1{
+					font-size:35px;
+					font-weight:bold;
+					margin-bottom:30px;
+					color:white;
+				}
+
+				.b2{
+					color:#f4c400;
+				}
+				
+				.b3{
+					background:#f4c400;
+					color:black;
+					font-weight:bold;
+					margin-top:24px;
+				}
+
+				.b3:hover{
+					background:#ffd633;
+				}
+				.footer{
+					background:#1F2833;
+					color:white;
+					padding:30px 0 20px;
+					margin-top:40px;
+				}
+
+				.f1{
+					text-align:center;
+					font-size:35px;
+					margin-bottom:10px;
+					color:#888;
+				}
+
+				.f2{
+					color:#f4c400;
+					font-weight:bold;
+				}
+
+				.f3{
+					text-align:center;
+					font-size:20px;
+					margin-bottom:50px;
+					color:#999;
+				}
+
+				.f4{
+					color:#777;
+					font-size:15px;
+					border-bottom:1px solid #333;
+					padding-bottom:10px;
+					margin-bottom:20px;
+				}
+
+				.f5{
+					font-size:13px;
+					line-height:1.8;
+					color:#ddd;
+				}
+
+				.f6{
+					border-top:1px solid #333;
+					margin-top:40px;
+					padding-top:20px;
+					text-align:center;
+					color:#999;
+					font-size:16px;
+				}
+			</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"><img src="images/logo.jpg" class="logo" alt="logo"><i>Elite Combat </i></a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="mainNavbar">
+				  <ul class="nav navbar-nav navbar-right">
+					<li ><a href="index.html">Home</a></li>
+					<li class="active"><a href="clubs.html">Clubs</a></li>
+					<li ><a href="class.html">Classes</a></li>
+					<li><a href="membership.html">Membership Fees</a></li>
+					<li><a href="offers.html">Offers</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li>
+					  <button class="btn btn-warning navbar-btn">
+						Join Now
+					  </button>
+					</li>
+				  </ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container-fluid a1">
+			<div class="container">
+				<h1 class="a2">
+					ELITE COMBAT:
+					<span class="a3">MMA CLUB LOCATIONS</span>
+				</h1>
+
+				<p class="a4">
+					Multiple Locations Across Chennai for Convenient MMA and Fitness Training
+				</p>
+			</div>
+		</div>
+
+		<div class="container a5">
+			<div class="row">
+				<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+					<h2 class="a6">TRAIN WITH US ACROSS CHENNAI</h2>
+
+					<p class="a7">
+						With multiple locations across the city, Elite Combat makes it easy
+						for you to join our MMA, Boxing and Fitness programs.
+						Every facility offers professional coaching and a motivating environment.
+					</p>
+					<hr>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-12 col-lg-3">
+					<a href="mountroad.html">	
+						<div class="a8">
+							<img src="images/club1.jpg" class="img-responsive a9">
+							<h3 class="a10">Mount Road</h3>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-12 col-lg-3">
+					<a href="neelankarai.html">	
+						<div class="a8">
+							<img src="images/club2.jpg" class="img-responsive a9">
+							<h3 class="a10">Neelankarai</h3>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-12 col-lg-3">
+					<a href="teynampet.html">		
+						<div class="a8">
+							<img src="images/club3.jpg" class="img-responsive a9">
+							<h3 class="a10">Teynampet</h3>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-12 col-lg-3">
+					<a href="velachery.html">		
+						<div class="a8">
+							<img src="images/club4.jpg" class="img-responsive a9">
+							<h3 class="a10">Velachery</h3>
+						</div>
+					</a>
+				</div>
+
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class=" col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 ">
+					<h2 class="b1">
+						<center>REQUEST A <span class="b2">TRIAL CLASS</span></center>
+					</h2>
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label>Name</label>
+							<input type="text" class="form-control" placeholder="Enter Name">
+						</div>
+						<div class="form-group">
+							<label>Mobile</label>
+							<input type="number" class="form-control" placeholder="Mobile Number">
+						</div>
+						<div class="form-group">
+							<label>Email</label>
+							<input type="email" class="form-control" placeholder="Email">
+						</div>
+						<div class="form-group">
+							<label>Program</label>
+							<select class="form-control">
+								<option>MMA Training</option>
+								<option>Boxing</option>
+								<option>Fitness Training</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label>Location</label>
+							<select class="form-control">
+								<option>Mount Road</option>
+								<option>Teynampet</option>
+								<option>Velachery</option>
+								<option>Neelankarai</option>
+							</select>
+						</div>						
+							<center><button class="btn b3">SEND REQUEST</button></center>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid footer">
+			<div class="row">
+				<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+						<h1 class="f1">
+							CONTACT US:<span class="f2"><br>+91 90000 00000 </span>
+						</h1>
+
+						<p class="f3">
+							9 AM TO 9 PM FOR CUSTOMER SERVICE
+						</p>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<h4 class="f4">Elite Combat Mount Road</h4>
+							<p class="f5">
+								No. 770-A, 2nd Floor,<br>
+								Anna Salai,<br>
+								Chennai - 600002
+							</p>
+					</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<h4 class="f4">Elite Combat Velachery</h4>
+							<p class="f5">
+								Velachery Main Road,<br>
+								Near Phoenix Mall,<br>
+								Chennai - 600042
+							</p>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<h4 class="f4">Elite Combat Anna Nagar</h4>
+							<p class="f5">
+								2nd Avenue,<br>
+								Anna Nagar East,<br>
+								Chennai - 600102
+							</p>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<h4 class="f4">Elite Combat Tambaram</h4>
+							<p class="f5">
+								GST Road,<br>
+								Tambaram West,<br>
+								Chennai - 600045
+							</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+					<div class="f6">
+						© 2026 Elite Combat | All Rights Reserved
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

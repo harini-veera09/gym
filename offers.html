@@ -1,0 +1,474 @@
+<html>
+	<head>
+		<title>project </title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>	
+			
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&display=swap" rel="stylesheet">
+			
+			<style>
+			
+				body{
+					background:#0B0C10;
+					color:#1e293b;
+					padding-top:70px;
+					font-family: "Mozilla Text", sans-serif;
+					
+				}				
+				.logo
+				{
+					border:0px none white;
+					border-radius:10px;
+				}
+				
+				.navbar{
+					margin-bottom:10px;
+					background-color:#1F2833;
+				}
+
+				.navbar-brand{
+					display:flex;
+					align-items:center;
+					font-size:24px;
+					font-weight:bold;
+					color:#f4c400 !important;
+					padding-top:8px;
+					padding-bottom:8px;
+				}
+
+				.navbar-brand img{
+					height:35px;
+					width:35px;
+					border-radius:8px;
+					margin-right:10px;
+				}
+
+				.navbar-nav li a{
+					font-size:15px;
+					padding-top:15px;
+					padding-bottom:15px;
+				}
+				.footer{
+					background:#1F2833;
+					color:white;
+					padding:30px 0 20px;
+					margin-top:40px;
+				}
+
+				.f1{
+					text-align:center;
+					font-size:35px;
+					margin-bottom:10px;
+					color:#888;
+				}
+
+				.f2{
+					color:#f4c400;
+					font-weight:bold;
+				}
+
+				.f3{
+					text-align:center;
+					font-size:20px;
+					margin-bottom:50px;
+					color:#999;
+				}
+
+				.f4{
+					color:white;
+					font-size:15px;
+					border-bottom:1px solid #333;
+					padding-bottom:10px;
+					margin-bottom:20px;
+				}
+
+				.f5{
+					font-size:13px;
+					line-height:1.8;
+					color:#ddd;
+				}
+
+				.f6{
+					border-top:1px solid #333;
+					margin-top:40px;
+					padding-top:20px;
+					text-align:center;
+					color:#999;
+					font-size:16px;
+				}
+				
+				.a1{
+					color:white;
+					font-size:65px;
+					font-weight:bold;
+					text-align:justify;
+				}
+				.a2{
+					color:#f4c400;
+				}
+				.a4{
+					color:white;
+				}
+				.a3{
+					color:#f4c400;
+				}
+				.a5{
+					padding:40px ;
+					
+				}
+				
+				.a6{
+					background:#1F2833;
+					padding:40px;
+				}
+				
+				.a7{
+					color:#f4c400;
+					font-size:20px;
+				}
+				
+				.a8{
+					color:white;
+					font-size:30px;
+				}
+				
+				.a9{
+					color:white;
+					font-size:15px;
+				}
+				
+				.a10{
+					color:#f4c400;
+				}
+				
+				.a11 img{
+					width:100%;
+					height:350px;
+					object-fit:cover;
+					border-radius:8px;
+				}
+				.a12{
+					color:#888;
+				}
+				
+				.a13{
+					border:2px solid #ffffff;
+					text-align:center;
+					padding:40px 20px;
+					color:white;
+					border-radius:5px;
+					margin-top:10px;
+				}
+				.a14{
+					color:#888;
+					text-decoration:line-through;
+					font-size:25px;
+				}
+				.a15{
+					font-size:35px;
+					font-weight:bold;
+					color:white;
+					line-height:1;
+				}
+
+				.a16{
+					color:#888;
+					font-size:20px;
+				}
+
+				.a17{
+					background:#f4c400;
+					color:white;
+					width:100%;
+					padding:15px;
+					font-size:20px;
+					font-weight:bold;
+					margin-top:20px;
+				}
+				.a17:hover{
+					color:black;
+					background:red
+				}
+				
+				.c1{
+					padding-top:60px;
+					padding-bottom:40px;
+				}
+				
+					font-size:35px;
+					font-weight:bold;
+					margin-bottom:30px;
+					color:white;
+				}
+				
+				.form-horizontal{
+					
+					padding:30px;
+					background:#111;
+				}
+				.form-horizontal label{
+					color:white;
+					font-size:16px;
+				}
+				.b1{
+					font-size:35px;
+					font-weight:bold;
+					color:white;
+				}
+
+				.b2{
+					color:#f4c400;
+				}
+				
+				.b3{
+					background:#f4c400;
+					color:black;
+					font-weight:bold;
+					margin-top:24px;
+				}
+
+				.b3:hover{
+					background:#ffd633;
+				}
+				.c3{
+					font-size:20px;
+					color:white;
+					font-style:italic;
+					line-height:1.6;
+				}
+				.e1{
+					border:2px solid #f4c400;
+					border-radius:12px;
+					padding:25px;
+					margin-top:40px;
+					margin-bottom:40px;
+					background:#0f1115;
+				}
+			</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				  <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" class="logo" alt="logo"><i>Elite Combat </i></a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="mainNavbar">
+				  <ul class="nav navbar-nav navbar-right">
+					<li ><a href="index.html">Home</a></li>
+					<li><a href="clubs.html">Clubs</a></li>
+					<li><a href="class.html">Classes</a></li>
+					<li><a href="membership.html">Membership Fees</a></li>
+					<li class="active"><a href="offers.html">Offers</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li>
+					  <button class="btn btn-warning navbar-btn">Join Now</button>
+					</li>
+				  </ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+					<div class="a5">
+						<p class="a1">Combat Kinetics:<span class="a2"> Special <br>Offers, Deals & Discounts</span></p>
+						<p class="a3">Limited Period Offers:<span class="a4">  Great Discounts and Promotions on MMA Fitness Classes in Chennai</span> </p>
+					</div>
+				</div>
+			</div>
+		</div>
+				<div class="container-fluid">
+					<div class="row a6">
+						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 a11">
+							<img src="images/annual.jfif" class="img-responsive" height="200px" width="400px">
+						</div>
+						<div class="col-lg-5 col-md-5 col-xs-12 col-sm-8">
+							<p class="a7">Annual MMA Membership at Mount road<br> — Now ₹30,000</p>
+							<p class="a8">Validity: Till Sept 30th.</p><br>
+							<p class="a9">Train for a full year at Combat Kinetics Mount road for just <span class="a10">₹30,000.</span> Regular annual membership is <span class="a10">₹43,000 </span>— available
+							at this special price for a limited time.<br><br>
+
+							Valid for Core Combat MMA classes at the Mount road Club only.<br><br>
+
+							Selected number of spots available for this month only. Hurry now — book your spot today!</p><br>
+							
+							<p class="a9">Available at:<br><span class="a12">CK Mount road only.</span></p><br>
+
+							<p class="a9">Applicable to:
+							<ul class="a12"><li>Combat classes for adults  (Core Combat MMA)</li>
+							<li>12 month packages only.</li></ul></P>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+
+							<div class="a13">
+								<h3><i>Learn to Fight at:</i></h3>
+
+								<p class="a14">₹43,000</p>
+
+								<div class="a15">30,000</div>
+
+								<div class="a16">/ 12 Months</div>
+							</div>
+
+							<button class="btn a17">
+								GRAB OFFER
+							</button>
+
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="container">
+					<div class="row c1">
+						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 a11">
+							<img src="images/student.jfif" class="img-responsive" height="200px" width="400px">
+						</div>
+						<div class="col-lg-5 col-md-5 col-xs-12 col-sm-8">
+							<p class="a7">Student Annual Special</p>
+							<p class="a8">Validity: Till slots last.</p><br>
+							<p class="a9">This deal is applicable on our annual Core Combat MMA package.<br><br>
+							Student Deal: Sign up for<span class="a10">one year of classes for Rs. 29,999 ONLY.</span><br><br>
+							Limited spots available. Sign up today!<br><br>
+							</P>
+							
+							<p class="a9">Available at:<br><span class="a12">All clubs.</span></p><br>
+
+							<p class="a9">Applicable to:
+							<ul class="a12"><li>12 month package only.</li>
+							<li>Core Combat MMA classes only.</li>
+							<li>Students aged 24 years or younger, with a valid student ID.</li></ul></P>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+
+							<div class="a13">
+								<h3><i>Best deal at:</i></h3>
+
+								<p class="a14">₹43,000</p>
+
+								<div class="a15">29,999</div>
+
+								<div class="a16">/ 12 Months<br>/student</div>
+							</div>
+							<button class="btn a17">
+								GRAB OFFER
+							</button>
+						</div>
+					</div>
+				</div><hr>
+		<div class="container-fluid ">
+			<div class="row">
+				<div class=" col-md-5 col-md-offset-3 col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 e1">
+					<h2 class="b2">
+						<center>Grab Your Offer!</center>
+					</h2>
+					<p class="c3">To avail any offer, submit your name, mobile number and <br>email NOW and we’ll get in touch!</p>
+					
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label>Name</label>
+							<input type="text" class="form-control" placeholder="Enter Name">
+						</div>
+						<div class="form-group">
+							<label>Mobile</label>
+							<input type="number" class="form-control" placeholder="Mobile Number">
+						</div>
+						<div class="form-group">
+							<label>Email</label>
+							<input type="email" class="form-control" placeholder="Email">
+						</div>
+						<div class="form-group">
+							<label>Program</label>
+							<select class="form-control">
+								<option>MMA Training</option>
+								<option>Boxing</option>
+								<option>Fitness Training</option>
+							</select>
+						</div>	
+						<div class="form-group">
+							<label>Location</label>
+							<select class="form-control">
+								<option>Mount Road</option>
+								<option>Teynampet</option>
+								<option>Velachery</option>
+								<option>Neelankarai</option>
+							</select>
+						</div>	
+							<center><button class="btn b3">SEND REQUEST</button></center>
+					</form>
+				</div>
+			</div>
+		</div>
+			
+		
+		<div class="container-fluid footer">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+						<h1 class="f1">
+							CONTACT US:<span class="f2"><br>+91 90000 00000</span>
+						</h1>
+
+						<p class="f3">
+							9 AM TO 9 PM FOR CUSTOMER SERVICE
+						</p>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<h4 class="f4">Elite Combat Mount Road</h4>
+							<p class="f5">
+								No. 770-A, 2nd Floor,<br>
+								Anna Salai,<br>
+								Chennai - 600002
+							</p>
+						</div>
+							<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<h4 class="f4">Elite Combat Velachery</h4>
+							<p class="f5">
+								Velachery Main Road,<br>
+								Near Phoenix Mall,<br>
+								Chennai - 600042
+							</p>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<h4 class="f4">Elite Combat Anna Nagar</h4>
+							<p class="f5">
+								2nd Avenue,<br>
+								Anna Nagar East,<br>
+								Chennai - 600102
+							</p>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<h4 class="f4">Elite Combat Tambaram</h4>
+							<p class="f5">
+								GST Road,<br>
+								Tambaram West,<br>
+								Chennai - 600045
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+						<div class="f6">
+							© 2026 Elite Combat | All Rights Reserved
+						</div>
+					</div>
+				</div>
+			</div>
+			
+	</body>
+</html>

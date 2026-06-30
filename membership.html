@@ -1,0 +1,561 @@
+<html>
+	<head>
+		<title>project </title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>	
+		
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&display=swap" rel="stylesheet">
+			<style>
+				body{
+					background:#0B0C10;
+					color:#1e293b;
+					padding-top:70px;
+					font-family: "Mozilla Text", sans-serif;
+					
+				}				
+				.logo
+				{
+					border:0px none white;
+					border-radius:10px;
+				}
+				
+				.navbar{
+					margin-bottom:10px;
+					background-color:#1F2833;
+				}
+
+				.navbar-brand{
+					display:flex;
+					align-items:center;
+					font-size:24px;
+					font-weight:bold;
+					color:#f4c400 !important;
+					padding-top:8px;
+					padding-bottom:8px;
+				}
+
+				.navbar-brand img{
+					height:35px;
+					width:35px;
+					border-radius:8px;
+					margin-right:10px;
+				}
+
+				.navbar-nav li a{
+					font-size:15px;
+					padding-top:15px;
+					padding-bottom:15px;
+				}
+				.footer{
+					background:#1F2833;
+					color:white;
+					padding:30px 0 20px;
+					margin-top:40px;
+				}
+
+				.f1{
+					text-align:center;
+					font-size:35px;
+					margin-bottom:10px;
+					color:#888;
+				}
+
+				.f2{
+					color:#f4c400;
+					font-weight:bold;
+				}
+
+				.f3{
+					text-align:center;
+					font-size:20px;
+					margin-bottom:50px;
+					color:#999;
+				}
+
+				.f4{
+					color:white;
+					font-size:15px;
+					border-bottom:1px solid #333;
+					padding-bottom:10px;
+					margin-bottom:20px;
+				}
+
+				.f5{
+					font-size:13px;
+					line-height:1.8;
+					color:#ddd;
+				}
+
+				.f6{
+					border-top:1px solid #333;
+					margin-top:40px;
+					padding-top:20px;
+					text-align:center;
+					color:#999;
+					font-size:16px;
+				}
+				
+				.section1{
+					background:#1F2833;
+					padding:80px 0;
+				}
+				.a1{
+					color:white;
+					font-size:40px;
+					font-weight:bold;
+					margin-bottom:20px;
+				}
+
+				.a2{
+					color:#f4c400;
+				}
+
+				.a3{
+					color:#f4c400;
+					font-size:24px;
+					font-weight:bold;
+					margin-bottom:15px;
+				}
+
+				.a4{
+					color:#ddd;
+					font-size:18px;
+					margin-bottom:50px;
+				}
+				.a5
+				{
+					font-size:20px;
+					color:white;
+				}
+				.b1{
+					background:#1F2833;
+					border-radius:8px;
+					overflow:hidden;
+					text-align:center;
+					margin-bottom:30px;
+					border:1px solid #333;
+				}
+
+				.b2{
+					background:#222;
+					color:#f4c400;
+					font-size:30px;
+					font-weight:bold;
+					padding:20px;
+				}
+
+				.b3{
+					color:white;
+					font-size:55px;
+					padding:30px 10px 15px;
+				}
+
+				.b3 del{
+					font-size:28px;
+					color:#999;
+				}
+
+				.b4{
+					color:#f4c400;
+					font-size:14px;
+					padding:0 20px;
+					font-weight:bold;
+				}
+
+				.b5{
+					color:#d1d5db;
+					font-size:15px;
+					padding:15px 20px 25px;
+					line-height:1.7;
+					min-height:80px;
+				}
+				.b6{
+					width:100%;
+					background:#f4c400;
+					color:black;
+					font-weight:bold;
+					padding:12px;
+					border:none;
+				}
+				
+				.b8{
+					width:100%;
+					background:#FF3108;
+					color:black;
+					font-weight:bold;
+					padding:12px;
+					border:none;
+				}
+				
+				.b9{
+					width:100%;
+					background:#2508FF;
+					color:black;
+					font-weight:bold;
+					padding:12px;
+					border:none;
+				}
+
+				.section3{
+					background:#1F2833;
+					padding:20px 0;
+					border:0 hidden white;
+					border-radius:15px;
+				}
+				.sec3{
+				margin-left:20px;
+				margin-right:20px;
+				}
+				
+
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				  <a class="navbar-brand" href="#"><img src="images/logo.jpg" class="logo" alt="logo"><i>Elite Combat </i></a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="mainNavbar">
+				  <ul class="nav navbar-nav navbar-right">
+					<li ><a href="index.html">Home</a></li>
+					<li><a href="clubs.html">Clubs</a></li>
+					<li><a href="class.html">Classes</a></li>
+					<li class="active"><a href="membership.html">Membership Fees</a></li>
+					<li><a href="offers.html">Offers</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li>
+					  <button class="btn btn-warning navbar-btn">Join Now</button>
+					</li>
+				  </ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container-fluid section1">
+			<div class="container">
+				<h1 class="a1">
+					FITNESS & <span class="a2">MMA CLASS FEES</span>
+				</h1>
+
+				<p class="a3">
+					Train Like a Fighter, Build Like an Athlete
+				</p>
+
+				<p class="a4">
+					Professional MMA, Boxing, Kickboxing and Functional Fitness programs
+					for beginners and advanced athletes.
+				</p>	
+			</div>
+		</div>
+		
+		<div class="container section2">
+			<div class="row">
+				<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+					<h1 class="a1">CORE COMBAT <span class="a2">MMA CLASS FEES</span></h1>
+					<p class="a3">Train Like a Fighter, Build Like an Athlete</p>
+					<p class="a4">A comprehensive MMA program integrating Muay Thai,BJJ and Wrestling.</p>
+					<div class="row">
+						<div class="col-md-4 col-lg-4 col-sm-8 col-xs-12">
+							<div class="b1">
+								<div class="b2">3 Months</div>
+								<div class="b3">
+									₹20,500
+								</div>
+								<p class="b4">60 to 120 minute sessions x 4-6 days a week</p>
+								<p class="b5">Build a strong base in striking, grappling and endurance.</p>
+								<button class="btn b6">Purchase</button>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-lg-4 col-sm-8 col-xs-12">
+							<div class="b1">
+								<div class="b2">6 Months</div>
+								<div class="b3">
+								₹29,000
+								</div>
+								<p class="b4">60 to 120 minute sessions x 4-6 days a week</p>
+								<p class="b5">Progress to advanced MMA techniques and conditioning.</p>
+								<button class="btn b6">Purchase</button>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-4 col-sm-8 col-xs-12">
+							<div class="b1">
+								<div class="b2">12 Months</div>
+								<div class="b3"><del>₹43,000</del><br>₹36,800</div>
+								<p class="b4">60 to 120 minute sessions x 4-6 days a week</p>
+								<p class="b5">Elite training for mastering MMA skills and peak fitness.</p>
+								<button class="btn b6">Purchase</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container section3">
+			<div class="row sec3">
+				<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+					<h1 class="a1">SHOCK <span class="a2">BOXNG CLASS</span> FEES</h1>
+					<p class="a3">Master Striking Techniques and Improve Overall Fitness</p>
+					<p class="a4">Focused training for mastering the fundamentals of boxing and Muay Thai.</p>
+					<div class="row">
+						<div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+							<div class="b1">
+								<div class="b2">1 Month<br><span class="a5">Weekend Classes</span></div>
+								<div class="b3">
+									₹2,500
+								</div>
+								<p class="b4">120 minute sessions x 2 days a week x 1 month</p>
+								<p class="b5">Focused and advanced weekend boxing sessions at Anna Nagar Club.</p>
+								<button class="btn b8">Purchase</button>
+							</div>
+						</div>
+						
+						<div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+							<div class="b1">
+								<div class="b2">3 Month<br><span class="a5">Weekend Classes</span></div>
+								<div class="b3">
+									₹15,000
+								</div>
+								<p class="b4">120 minute sessions x 4 days a week x 3 months</p>
+								<p class="b5">Focus on developing core boxing techniques and improving fitness.</p>
+								<button class="btn b8">Purchase</button>
+							</div>
+						</div>
+							
+						<div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+							<div class="b1">
+								<div class="b2">6 Month<br><span class="a5">Weekend Classes</span></div>
+								<div class="b3">
+									₹20,000
+								</div>
+								<p class="b4">120 minute sessions x 4 days a week x 6 months</p>
+								<p class="b5">Advanced training to refine techniques, endurance, and agility.</p>
+								<button class="btn b8">Purchase</button>
+							</div>
+						</div>
+						
+						<div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+							<div class="b1">
+								<div class="b2">12 Month<br><span class="a5">Weekend Classes</span></div>
+								<div class="b3">
+									₹30,000
+								</div>
+								<p class="b4">120 minute sessions x 4 days a week x 12 months</p>
+								<p class="b5">Comprehensive development for competitive readiness and peak fitness.</p>
+								<button class="btn b8">Purchase</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container section2">
+			<div class="row">
+				<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+					<h1 class="a1">THE SAVAGE LIFE <span class="a2">FITNESS BOOTCAMP FEES</span></h1>
+					<p class="a3">Build Strength, Mobility, and Endurance</p>
+					<p class="a4">Our foundational program focuses on scalable calisthenics, designed for all fitness levels.</p>
+					<div class="row">
+						<div class="col-md-4 col-lg-4 col-sm-8 col-xs-12">
+							<div class="b1">
+								<div class="b2">3 Months</div>
+								<div class="b3">
+									₹15,000
+								</div>
+								<p class="b4">60 to 120 minute sessions x 4-6 days a week</p>
+								<p class="b5">Perfect for building foundational strength, endurance, and mobility.</p>
+								<button class="btn b9">Purchase</button>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-lg-4 col-sm-8 col-xs-12">
+							<div class="b1">
+								<div class="b2">6 Months</div>
+								<div class="b3">
+								₹20,000
+								</div>
+								<p class="b4">40 minute session × 4 days × 6 months</p>
+								<p class="b5">A progressive program to enhance functional fitness and overall stamina.</p>
+								<button class="btn b9">Purchase</button>
+							</div>
+						</div>
+						
+						<div class="col-md-4 col-lg-4 col-sm-8 col-xs-12">
+							<div class="b1">
+								<div class="b2">6 Months</div>
+								<div class="b3">
+								₹30,000
+								</div>
+								<p class="b4">40 minute session × 4 days × 12 months</p>
+								<p class="b5">Long-term fitness transformation with scalable and sustainable progress.</p>
+								<button class="btn b9">Purchase</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container section3">
+			<div class="row sec3">
+				<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+					<h1 class="a1">KIDS <span class="a2">MMA CLASS</span> FEES</h1>
+					<p class="a3">Building Discipline, Agility, and Confidence in Young Athletes</p>
+					<p class="a4">For ages 6–15, our Kids MMA program enhances coordination, strength, and focus in a safe environment.</p>
+					<div class="row">
+						<div class="col-md-4 col-lg-4 col-sm-8 col-xs-12">
+							<div class="b1">
+								<div class="b2">3 Months</div>
+								<div class="b3"><del>₹18,200</del><br>₹15,000</div>
+								<p class="b4">60 minute session × 4 days× 3 months</p>
+								<p class="b5">A structured program to develop discipline, agility, and confidence.</p>
+								<button class="btn b8">Purchase</button>
+							</div>
+						</div>
+						
+						<div class="col-md-4 col-lg-4 col-sm-8 col-xs-12">
+							<div class="b1">
+								<div class="b2">6 Months</div>
+								<div class="b3"><del>₹25,000</del><br>₹20,000</div>
+								<p class="b4">60 minute session × 4 days× 6 months</p>
+								<p class="b5">Build advanced coordination, strength, and focus over an extended period.</p>
+								<button class="btn b8">Purchase</button>
+							</div>
+						</div>						
+						
+						<div class="col-md-4 col-lg-4 col-sm-8 col-xs-12">
+							<div class="b1">
+								<div class="b2">12 Months</div>
+								<div class="b3"><del>₹35,000</del><br>₹30,000</div>
+								<p class="b4">60 minute session × 4 days× 12 months</p>
+								<p class="b5">Comprehensive training for long-term growth in fitness and martial arts skills.</p>
+								<button class="btn b8">Purchase</button>
+							</div>
+						</div>						
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container section2">
+			<div class="row">
+				<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+					<h1 class="a1">TARGETED PERSONAL TRAINING <span class="a2">(TPT)</span> FEES</h1>
+					<p class="a3">One-on-One Coaching for Tailored Results</p>
+					<p class="a4">Get personalized training sessions with expert coaches to meet your specific fitness and combat sports goals.</p>
+					<div class="row">
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="b1">
+								<div class="b2">Single Session<br><span class="a5" >(Online/In-Club)</span></div>
+								<div class="b3">₹2,000</div>
+								<p class="b4">One 60-minute personal training session.</p>
+								<p class="b5">Perfect for technique correction and fitness assessment.</p>
+								<button class="btn b9">Purchase</button>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="b1">
+								<div class="b2">Single Session<br><span class="a5">(At Home)</span></div>
+								<div class="b3">₹2,600</div>
+								<p class="b4">One 60-minute home training session.</p>
+								<p class="b5">Sessions can be Martial Arts or Fitness based.<br>Conducted at your home/location of your choice.</p>
+								<button class="btn b9">Purchase</button>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="b1">
+								<div class="b2">1 Month<br><span class="a5">(Online/In-Club)</span></div>
+								<div class="b3">₹26,300</div>
+								<p class="b4">16 personalized, 60-minute sessions x 4 days a week, in person at clubs or online.</p>
+								<p class="b5">Includes strength, conditioning and skill development.<br>Additionally, gain access to up to 3 Group Sessions per week</p>
+								<button class="btn b9">Purchase</button>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="b1">
+								<div class="b2">1 Month<br><span class="a5">(At Home)</span></div>
+								<div class="b3">₹34,190</div>
+								<p class="b4">16 personalized, 60 minute sessions x 4 days a week delivered at your home.</p>
+								<p class="b5">Complete one-on-one coaching with customized plans.<br>Additionally, gain access to up to 3 
+								Group Sessions per week:1 Sparring Session,1 Sprinting,1 Swimming </p>
+								<button class="btn b9">Purchase</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid footer">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+						<h1 class="f1">
+							CONTACT US:<span class="f2"><br>+91 90000 00000</span>
+						</h1>
+
+						<p class="f3">
+							9 AM TO 9 PM FOR CUSTOMER SERVICE
+						</p>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<h4 class="f4">Elite Combat Mount Road</h4>
+							<p class="f5">
+								No. 770-A, 2nd Floor,<br>
+								Anna Salai,<br>
+								Chennai - 600002
+							</p>
+						</div>
+							<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<h4 class="f4">Elite Combat Velachery</h4>
+							<p class="f5">
+								Velachery Main Road,<br>
+								Near Phoenix Mall,<br>
+								Chennai - 600042
+							</p>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<h4 class="f4">Elite Combat Anna Nagar</h4>
+							<p class="f5">
+								2nd Avenue,<br>
+								Anna Nagar East,<br>
+								Chennai - 600102
+							</p>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<h4 class="f4">Elite Combat Tambaram</h4>
+							<p class="f5">
+								GST Road,<br>
+								Tambaram West,<br>
+								Chennai - 600045
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+						<div class="f6">
+							© 2026 Elite Combat | All Rights Reserved
+						</div>
+					</div>
+				</div>
+			</div>
+	</body>
+</html>
